@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Activity 5 - Resume</title>
+  <title>Final Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styless.css" />
   <script src="script.js" defer></script>
+  <script src="contact.js"></script>
 </head>
 
 <body>
@@ -28,27 +29,26 @@
     <a href="contact.html">Contact Us</a>
   </div>
 
-  <!-- Unified Contact Section -->
   <div class="contact-container">
     <div class="contact-form">
       <h2>Get in Touch</h2>
       <form id="contactForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
-
+    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
-
+    
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-
+    
         <div class="form-buttons">
           <button type="submit">Submit</button>
-          <button type="reset">Clear</button>
+          <button type="reset" id="clearBtn">Clear</button>
         </div>
       </form>
+    </div>
 
-      <!-- New Box for Contact Info + Social Icons -->
       <div class="contact-info">
         <h2>Contact Info</h2>
         <p><b>Email:</b> krishnakate.villacorta@cit.edu</p>
@@ -65,7 +65,6 @@
     </div>
   </div>
 
-  <!-- Map Section -->
   <div class="map-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.671040966219!2d123.8780003740109!3d10.288067068013744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99d3fefe249fb%3A0x25435dff7ed596e0!2slawis%20mambaling!5e0!3m2!1sen!2sph!4v1745952801203!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
