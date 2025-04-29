@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 5 - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+ 
+
+    <div class="header-slider">
+        <div class="slide fade">
+            <img src="images/tulip.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="images/shna.jpg" alt="Slide 2">
+        </div>
+
+        <div class="navbar">
+            <a href="actUs.html">About US</a>
+            <a href="activity5.html">Home</a>
+            <a href="act5prd.html">Products</a>
+            <a href="act5contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <section class="resume">
+        <div class="resume-container">
+            <div class="profile-pic">
+                <img src="images/shna.jpg" alt="Profile Picture">
+            </div>
+            <div class="resume-info">
+                <h1>Your Name</h1>
+                <p><strong>Goal:</strong> To become a skilled engineer and share God's wisdom and love through my craft.</p>
+
+                <h2>Skills</h2>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Teamwork & Leadership</li>
+                    <li>Critical Thinking</li>
+                    <li>Communication</li>
+                </ul>
+
+                <h2>Educational Background</h2>
+                <ul>
+                    <li><strong>High School:</strong> Example High School (Graduated: 2022)</li>
+                    <li><strong>College:</strong> Bachelor of Science in Engineering (Expected: 2026)</li>
+                </ul>
+
+                <h2>Technical Proficiency</h2>
+                <div class="skill">
+                <div class="skill">
+                    <label>C</label>
+                    <div class="bar"><div class="c"></div></div>
+                </div>
+                <div class="skill">
+                    <label>CSS</label>
+                    <div class="bar"><div class="css"></div></div>
+                </div>
+                <div class="skill">
+                    <label>HTML</label>
+                    <div class="bar"><div class="html"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

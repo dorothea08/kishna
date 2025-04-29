@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-slider {
+  position: relative;
+  max-width: 300%;
+  height: 300px;
+  overflow:visible;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  padding: 3px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: darkgray;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.activity-section {
+  padding: 40px 20px;
+  background-color: rgb(207, 186, 158);
+  display: flex;
+  justify-content: center;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin-left: auto; /* Align to the right */
+  margin-right: auto;
+}
+
+.activity-card {
+  border: 5px solid darkgray;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.activity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.iframe-preview {
+  width: 100%;
+  height: 150px;
+  border: 3px solid #000000;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  pointer-events: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iframe-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: #000000;
+}
+
+.view-btn {
+  margin-top: 10px;
+  background-color: rgb(214, 214, 146);
+  color: rgb(83, 68, 68);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #caadad;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+  .activity-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .activity-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background: beige;
+  color: rgb(0, 0, 0);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
